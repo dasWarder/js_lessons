@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Test</title>
+    <style>
+        li {
+            float: left;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu-link {
+            box-sizing: border-box;
+            padding: 10px 20px;
+            display: inline-block;
+            font-size: 1.35em;
+            color: yellow;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: #009955;
+        }
+
+        .active {
+            background-color: red;
+        }
+
+        .active:hover {
+            background-color: #dd0000;
+        }
+    </style>
+</head>
+<body>
+    <header style="width: 100%; position:sticky; padding: 15px 0px; display: block; background-color: #111; text-align: center">
+        <h1 style="color: aliceblue; text-decoration: none;">Hello World!</h1>
+    </header>
+    <nav style="background-color: #00aa55; position: sticky; display: flex;">
+        <ul style="margin: 0; padding: 0; list-style-type: none; position: relative; left: 42%">
+            <li><a name="menu-main" class="active menu-link" href="#main">Main</a></li>
+            <li><a name="menu-info" href="#info" class="menu-link">Info</a></li>
+            <li><a name="menu-about" href="#about" class="menu-link">About</a></li>
+        </ul>
+    </nav>
+    <div style="width: 33.33%; margin: auto; padding: 10px">
+        <button name="submenu-button" style="margin: 10px 41%; padding: 10px">Click me 1</button>
+        <button name="submenu-button" style="margin: 10px 41%; padding: 10px">Click me 2</button>
+        <button name="submenu-button" style="margin: 10px 41%; padding: 10px">Click me 3</button>
+    </div>
+    <script src="../js/main.js"></script>
+    <script src="../js/await.js" async></script>
+</body>
